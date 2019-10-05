@@ -1,0 +1,16 @@
+.card {
+    margin: 15px;
+}
+.media {
+    width: 80%;
+    margin: 20px;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#avatar {
+    margin: 15px;
+}

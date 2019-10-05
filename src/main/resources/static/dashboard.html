@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/dashboard.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center" id="pic-col"></div>
+                <div class="col-md-4 text-center" id="name-col"></div>
+                <div class="col-md-3 text-center" id="stat-col">
+
+                </div>
+                <div class="col-md-3 text-center" id="btn-col"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Add new event</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <input class="form-control" type="text" placeholder="Title" id="title"/>
+                    </div><br>
+                    <div class="row justify-content-center">
+                        <input class="form-control" type="text" placeholder="Description" id="description"/>
+                    </div><br>
+                    <div class="row justify-content-center">
+                         <input class="form-control" type="datetime-local" placeholder="Start Date" id="start">
+                    </div><br>
+                    <div class="row justify-content-center">
+                         <input class="form-control" type="datetime-local" placeholder="End Date" id="end">
+                    </div><br>
+                    <div class="row justify-content-center">
+                        <input class="form-control" type="text" placeholder="Location" id="location">
+                    </div><br>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" id="addEvent">Add Event</button>
+                    </div>
+                </div><br>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center" id="events">
+
+        </div>
+    </div>
+     <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+     <script type="text/javascript" src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="/dashboard.js"></script>
+</body>
+</html>
