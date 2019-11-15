@@ -21,8 +21,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-security'
     compile 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.7.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    //runtimeOnly 'mysql:mysql-connector-java'
-    compile 'org.postgresql:postgresql:42.2.8'
+    runtimeOnly 'mysql:mysql-connector-java'
+    //compile 'org.postgresql:postgresql:42.2.8'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     //testImplementation 'org.springframework.security:spring-security-test'

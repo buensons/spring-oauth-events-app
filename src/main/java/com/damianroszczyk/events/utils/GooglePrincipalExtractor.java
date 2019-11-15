@@ -32,3 +32,4 @@ public class GooglePrincipalExtractor implements PrincipalExtractor {
         return newUser;
     }
 }
+
