@@ -1,14 +1,13 @@
 package com.damianroszczyk.events.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.apache.tomcat.jni.Local;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "events")
 public class Event implements Comparable<Event>{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Entity
+@Table(name = "users")
 public class User {
 
     @Id
