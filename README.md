@@ -6,9 +6,10 @@ Link: https://events-dot-outstanding-box-250210.appspot.com/
 
 ### TO-DO List
 
-- [ ] Better Front End
+- [ ] Implement event counter
+- [ ] Insert new event into correct position (by date)
 - [ ] Add form login (Custom Authorization Server)
-- [X] Deploy the app to Google Cloud
+- [X] Deploy the app to Google Cloud Platform
 
 ### Preview
 ![alt text](https://raw.githubusercontent.com/buensons/spring-oauth-events-app/master/screenshot.png)
