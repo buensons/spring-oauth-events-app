@@ -6,7 +6,7 @@ let eventsThisWeek = 0;
 
 document.getElementById("addEvent").addEventListener('click', addEvent);
 
-fetch("http://localhost:8080/api/me")
+fetch("https://events-dot-outstanding-box-250210.appspot.com/api/me")
     .then(resp => {
         return resp.json();
     })
@@ -14,7 +14,7 @@ fetch("http://localhost:8080/api/me")
         loadProfile(user);
     });
 
-fetch("http://localhost:8080/api/events")
+fetch("https://events-dot-outstanding-box-250210.appspot.com/api/events")
     .then(resp => {
         return resp.json();
     })
@@ -32,7 +32,7 @@ fetch("http://localhost:8080/api/events")
 function loadProfile(currentUser) {
     document.getElementById("pic-col").innerHTML = '<img src="' + currentUser.photo
         + '" alt="pic" id="avatar" class="mr-3 mt-3 align-self-start rounded-circle" style="width:100px;">\
-        <p><a href="http://localhost:8080/logout">[Logout]</a></p>';
+        <p><a href="https://events-dot-outstanding-box-250210.appspot.com/logout">[Logout]</a></p>';
 
     document.getElementById("name-col").innerHTML = '<div id="name"><h2>'
         + currentUser.username + '</h2></div><small><p>('+ currentUser.email +')</p></small>';
@@ -76,7 +76,7 @@ function addTile(event) {
 }
 
 function deleteEvent(id) {
-    fetch("http://localhost:8080/api/events/" + id, {
+    fetch("https://events-dot-outstanding-box-250210.appspot.com/api/events/" + id, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -89,7 +89,7 @@ function deleteEvent(id) {
 }
 
 function refresh() {
-    fetch("http://localhost:8080/api/events")
+    fetch("https://events-dot-outstanding-box-250210.appspot.com/api/events")
         .then(resp => {
             return resp.json();
         })
@@ -118,7 +118,7 @@ function addEvent() {
     eventStartDate.value = "";
     eventFinishDate.value = "";
 
-    fetch("http://localhost:8080/api/events", {
+    fetch("https://events-dot-outstanding-box-250210.appspot.com/api/events", {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
